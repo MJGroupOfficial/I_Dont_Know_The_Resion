@@ -1,0 +1,33 @@
+body{
+  display: flex;
+  width:100vw;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+#text{
+  font-size: 50px;
+}
+#text::after{
+  background: rgb(126,69,198);
+  color: white;
+  padding:5px;
+  border-radius: 5px;
+  content: "";
+  animation:appear 5s ease infinite;
+}
+@keyframes appear{
+  0%{
+    content: "Scrimba";
+  }
+  33%{
+    content:"cat";
+  }
+  66%{
+    content: "code";
+  }
+  100%{
+    content: "develope";
+  } 
+}

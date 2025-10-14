@@ -1,0 +1,138 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+}
+:root{
+  --bg:#35687d;
+  --random-btn-bg:#35687d37;
+  --page-bg:gray;
+}
+#heading{
+  margin: 0;
+  padding: 3px;
+}
+#heading{
+  border-bottom:2px solid var(--bg);
+}
+.review{
+  width:250px;
+  height:auto;
+  background: var(--page-bg);
+  text-align: center;
+  margin-top:25px;
+  border-radius: 2px;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1.2px;
+  box-shadow:3px 3px 40px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#img-container{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  border:0px solid var(--bg);
+  border-top-width:4.8px;
+  border-right-width: 4.8px;
+  margin-bottom:0;
+  position: relative;
+  margin-top:20px;
+  background: var(--bg);
+}
+img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius:50%;
+  filter:brightness(1.2);
+}
+.symbol{
+  background: var(--bg);
+  position: absolute;
+  left:-10px;
+  width:25px;
+  height:10px;
+  z-index: 1;
+  padding:2px;
+  font-size:20px;
+  font-weight: 600;
+  border-radius:50%;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:15px;
+  color:white;
+}
+#author{
+  margin:0;
+  padding:0;
+  margin-top:10px;
+  letter-spacing: 2.5px;
+  word-spacing: 2px;
+  font-family: Sans-Serif;
+  font-weight: 600;
+  text-align: center;
+}
+#job{
+  margin: 0;
+  padding: 0;
+  margin-top:5px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: var(--bg);
+}
+#info{
+  margin: 0;
+  margin-top:12px;
+  text-align: center;
+  
+  max-width: 210px;
+}
+.button-container{
+  margin-top:12px;
+}
+.prev-btn{
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  font-weight: 400;
+  color:var(--bg);
+  margin: 0;
+  padding: 0;
+}
+.next-btn{
+  background: transparent;
+  border: none;
+  font-size: 35px;
+  font-weight: 400;
+  color: var(--bg);
+  margin:0;
+  padding:0;
+  margin-left:22px;
+}
+.random-btn{
+  margin:0;
+  padding:0;
+  border:none;
+  font-size: 17px;
+  padding:4px 8px;
+  border-radius: 4px;
+  color: var(--bg);
+  background: var(--random-btn-bg);
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+.center{
+  text-align: center;
+}

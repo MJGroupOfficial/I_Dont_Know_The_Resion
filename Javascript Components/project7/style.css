@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+:root{
+  --color:#f28b2f;
+}
+.image-wraper{
+  margin: 0px 15px;
+  margin-top:15px;
+}
+html,body,h2,div,p,img,article,section,header{
+  margin: 0;
+  padding: 0;
+}
+.title{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:15px;
+}
+.menu .title .underline{
+  width:max(150px,8vw);
+  height:2px;
+  background: var(--color);
+} 
+.item-filter{
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  width:100vw;
+  height:50px;
+  align-items: center;
+}
+.item-filter button{
+  all:unset;
+  border-radius: 12px;
+  margin:5px;
+  background: orange;
+  color:#fff;
+  font-size: 10px;
+  font-weight: 500;
+  padding:2px 5px;
+  transition: all 0.5s;
+}
+@media (min-width:768px){
+  .item-filter button{
+    font-size: 2.7vw;
+  }
+}
+.item-filter button:hover{
+  border:2px solid #ddd;
+  color: orange;
+  background: transparent;
+  font-weight: 500;
+  transform: scale(1.1);
+}
+img{
+  width:100%;
+  height: max(250px,18vw);
+  object-fit: cover;
+  border-radius: 5px;
+}
+.menu-item{
+  background: #d3d3d3;
+  margin-top:15px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  padding-left:15px;
+  font-size: max(25px,3vw);
+}
+p{
+  padding:5px 15px;
+}
+.section-center{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+article{
+  padding-bottom: max(50px,5vw);
+  object-fit: cover;
+  border-radius: 5px;
+  margin:0 10px;
+}
+button{
+  all:unset;
+  background: orange;
+  color: #fff;
+  font-size: max(24px,3vw);
+  padding: 3px 15px;
+  margin-left: 15px;
+  margin-top:15px;
+}
+@media (max-width:1200px){
+  .section-center{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:765px){
+    .section-center{
+    grid-template-columns: 1fr;
+  }
+}

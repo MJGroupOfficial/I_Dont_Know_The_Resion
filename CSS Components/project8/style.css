@@ -1,0 +1,28 @@
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-family: 'Poppins', sans-serif;
+}
+#container{
+  width: 60vw;
+  height: calc(60vw * 2 / 3);
+  display: flex;
+  flex-wrap: wrap; 
+  position: relative;
+}
+.stripe{
+  height:100%;
+  width:calc(60vw / 3);
+}
+.blue{
+  background: blue;
+}
+.white{
+  background: white;
+}
+.red{
+  background: red;
+}

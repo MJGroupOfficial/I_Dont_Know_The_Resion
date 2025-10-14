@@ -1,0 +1,32 @@
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-family: 'Poppins', sans-serif;
+}
+#container{
+  height: 200px;
+  width: calc(200px * 3 / 2);
+  background: black;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.two-stripe{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.white{
+  background: white;
+  height:200px;
+}
+.vertical{
+  width:200px;
+}
+.red{
+  background: red;
+}
+.green{
+  background: green;
+}

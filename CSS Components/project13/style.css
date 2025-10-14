@@ -1,0 +1,35 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+:root {
+  --blue:rgb(37,81,156);
+  --yellow:rgb(238,244,73);
+  --flag-height:150px;
+}
+#fleg-sweden{
+  height:var(--flag-height);
+  width:calc(var(--flag-height) * 8 / 5);
+  background: var(--blue);
+  display:flex;
+  position: relative;
+}
+.stripe{
+  background: var(--yellow);
+  height:calc(var(--flag-height) * 1 / 5);
+}
+.stripe1{
+  align-self: center;
+  width: 100%;
+}
+.stripe2{
+  width:var(--flag-height);
+  transform: rotate(90deg);
+  align-self: center;
+  position: absolute;
+}

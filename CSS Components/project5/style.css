@@ -1,0 +1,29 @@
+ body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.box{
+  width: 60px;
+  height: 60px;
+  background: rgba(175,175,175,0.87);
+  animation: boxes 4s ease infinite;
+  margin: 15px;
+}.box1{
+  background: red;
+}.box2{
+  background: blue;
+}.box3{
+  background: green;
+}
+@keyframes boxes{
+  from{
+    transform: rotate(45deg);
+  }
+  to{
+    transform: rotate(320deg);
+  }
+}

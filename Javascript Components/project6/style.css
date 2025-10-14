@@ -1,0 +1,146 @@
+:root {
+  --color: #f25caa;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #0135e0;
+  color: var(--color);
+  font-family: 'Courier New', Courier, monospace, Sans-Serif;
+}
+
+div,
+h2,
+p,
+article {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  width: 350px;
+  display: grid;
+  grid-template-rows: repeat(3, auto); /* Changed to auto to accommodate content height */
+  grid-template-columns: 1fr;
+  gap: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.quetion-container {
+  display: flex;
+  justify-content: space-between; /* Added space-between to push button to the right */
+  align-items: center; /* Vertically align question and button */
+  padding: 2px 5px; /* Added padding for better spacing */
+}
+
+article {
+  padding: 2px 5px;
+  background: #760404;
+}
+
+article:first-child {
+  margin-top: 15px;
+}
+
+article:last-child {
+  margin-bottom: 15px;
+}
+
+button {
+  all: unset;
+  background-color: transparent;
+  border: 1px solid var(--color);
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: var(--color); /* Changed button text color to match --color */
+  margin-left: 5px;
+  cursor: pointer; /* Added cursor for better user interaction */
+}
+
+.minus-btn {
+  font-size: 20px;
+  color: var(--color); /* Added color to the minus button */
+}
+
+p {
+  font-size: 20px;
+  padding: 10px; /* Added padding for better readability */
+}
+
+/**** hide and show *****/
+.answer-container {
+  overflow: hidden;
+  height: 0;
+ /* Using transition for smoother animation */
+  
+}
+
+.answer-container-show {
+  overflow: visible;
+  height: auto; /* Allows the container to expand based on content */
+  opacity: 1;
+  padding: 10px; 
+  animation:anm 0.9s ease;/* Added padding when visible */
+}
+
+.minus-btn {
+  display: none;
+}
+.plus-btn-open{
+  display: flex;
+  position:relative;
+}
+.plus-btn-open .plus { /* Target the plus sign when the button is open */
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.plus-btn-open .minus-btn { /* Show the minus button when the button is open */
+  position: absolute;
+  top:0;
+  left:0;
+}
+
+.line {
+  display: none;
+}
+
+.show-line {
+  margin-top: 5px;
+  height: 1.5px;
+  width: 100%;
+  background: green;
+}
+@keyframes anm{
+  from{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes roatate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-90deg);
+  }
+}
+/* Removed keyframe animations as CSS transitions are generally smoother for height changes */

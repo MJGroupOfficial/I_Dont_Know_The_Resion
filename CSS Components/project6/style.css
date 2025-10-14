@@ -1,0 +1,26 @@
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.circle{
+  padding:30px;
+  border-radius: 100%;
+}
+#black-circle{
+  background: black;
+}
+#yellow-circle{
+  background: yellow;
+  z-index: 99;
+}
+#red-circle{
+  background: red;
+  z-index: 77;
+}
+#blue-circle{
+  background: blue;
+  z-index: 55;
+}

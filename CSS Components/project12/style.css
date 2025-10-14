@@ -1,0 +1,23 @@
+body{
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  width:200px;
+  height:calc(200px * 2 / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+#circle{
+  
+  height:80px;
+  width: 80px;
+  border-radius: 100%;
+  background: red;
+}

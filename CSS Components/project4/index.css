@@ -1,0 +1,25 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+}
+.box{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: rgba(175,175,175,0.87);
+  animation: boxes 4s ease infinite;
+  margin: 10px;
+}
+@keyframes boxes{
+  from{
+    
+  }
+  to{
+  transform:scale(1.1);
+  background: rgba(175,175,175,0.491);
+  }
+}

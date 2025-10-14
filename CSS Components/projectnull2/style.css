@@ -1,0 +1,43 @@
+html, body{
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --card-bg-color:#06ce;
+  --font-color:#fff;
+}
+#card{
+  width:250px;
+  height:200px;
+  background: midnightblue;
+  color:white;
+  font-size:24px;
+  border-radius: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  transition:transform .6s;
+  transform-style: preserve-3d;
+}
+#card:hover{
+  transform:rotateY(180deg)
+}
+#card-back{
+  display: none;
+}
+#card:hover #card-font{
+  display:none;
+  transform: rotateY(180deg);
+}
+#card:hover #card-back{
+  display: block;
+  transform: rotateY(180deg);
+}
+
