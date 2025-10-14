@@ -1,0 +1,33 @@
+nav{
+    background:#212121;
+    padding:10px;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    border-radius:2px;
+    color:white;
+    background:gray;
+    margin:0px 12px;
+    padding:0px 4px;
+}
+.center{
+    width:100vw;
+    height:100vh;    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#clock{  
+    min-width:150px;
+    min-height:28px;
+    z-index:-5;
+    border:1px solid #471d06;
+    border-radius:9px;
+    background:#c95311ae;
+    margin:8px;
+    padding:10px;color: ;
+    font-size:24px;
+    text-align:center;
+}

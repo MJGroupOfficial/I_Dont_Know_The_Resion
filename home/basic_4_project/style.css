@@ -1,0 +1,34 @@
+nav{
+    background:#212121;
+    padding:10px;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    border-radius:2px;
+    color:white;
+    background:gray;
+    margin:0px 12px;
+    padding:0px 4px;
+}
+button{
+    margin:4px;
+    color:white;    
+    background:black;
+    padding:10px 30px;
+    border:none;
+    font-size:24px;    
+    width:40vw;
+    height:8vh;
+}
+#center{
+    text-align:center;
+}
+#hexcode{
+    font-size:34px;
+    margin:23px;
+}
+#hexcode::selection{
+    background:black;
+    color:lightblue;
+}

@@ -1,0 +1,45 @@
+nav{
+    background:#212121;
+    padding:10px;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+    border-radius:2px;
+    color:white;
+    background:gray;
+    margin:0px 12px;
+    padding:0px 4px;
+}
+button{
+    margin:4px;
+}
+.container{
+    text-align:center;
+}
+.input_head{
+    font-size:24px;
+}
+.para{
+    font-size:23px;
+}
+.under{
+    color:#c56231e2;
+}
+.normal{
+    color:green;
+}
+.over{
+    color:red;
+}
+button{
+    background:#1f9cbbed;
+    padding:4px 5px;
+    border:none;
+    border-radius:3px;   
+    font-size:1.5rem;
+    color:white;
+    box-shadow:3px 3px 5px inset #0e4552;
+    text-shadow:3px 3px 5px #0e4552;
+}
+
